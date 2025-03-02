@@ -47,7 +47,7 @@ const ContactForm = () => {
             <h2 className="text-3xl font-bold text-black text-center">Contact Us</h2>
             
             <div>
-              <label className="block  text-sm font-semibold mb-2" htmlFor="name">
+              <label className="block  text-sm font-semibold mb-2" htmlFor="name" >
                 Name
               </label>
               <input
@@ -55,6 +55,7 @@ const ContactForm = () => {
                 id="name"
                 className="pointer-events-auto w-full px-4 py-3 border-2 border-black/20  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white/10  placeholder-white/50"
                 placeholder="Your name"
+                name="first_name"
               />
             </div>
 
@@ -67,6 +68,7 @@ const ContactForm = () => {
                 id="email"
                 className="pointer-events-auto w-full px-4 py-3 border-2 border-black/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white/10  placeholder-white/50"
                 placeholder="your@email.com"
+                name="email_"
               />
             </div>
 
@@ -75,6 +77,7 @@ const ContactForm = () => {
                 Message
               </label>
               <textarea
+              name="message"
                 id="message"
                 rows="4"
                 className="pointer-events-auto w-full px-4 py-3 border-2 border-black/20  rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 bg-white/10  placeholder-white/50"
