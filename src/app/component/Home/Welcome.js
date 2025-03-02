@@ -18,7 +18,7 @@ export default function Welcome() {
             <span className="text-xl GlowText">
               Hi, I’m <span className="text-blue-800">Aftab Alam</span>
             </span>
-            ,<br /> a Full Stack Developer and Data Analyst. I build scalable
+            ,<br /> Full Stack Developer and Data Analyst. I build scalable
             applications and turn data into valuable insights. I’m passionate
             about problem-solving, innovation, and creating impactful tech
             solutions. 🚀
