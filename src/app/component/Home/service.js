@@ -53,7 +53,7 @@ const services = [
 
 const Service = () => {
   return (
-    <section className="pt-[100px] relative flex items-center px-4 md:pt-[100px] p-7 min-h-screen w-full bg-gradient-to-br from-gray-900 to-black">
+    <section className="pt-[100px] relative flex items-center px-4 md:pt-[100px] p-7 min-h-screen w-full bg-gradient-to-br from-gray-900 to-black Pointer">
       {/* 3D Background */}
       <div className="absolute top-0 left-0 w-full h-full">
         <Canvas>

@@ -1,5 +1,32 @@
 'use client'
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
 const ContactForm = () => {
+  const formRef = useRef(null);
+  const [status, setStatus] = useState("");
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_5q22n7j",  // Replace with your EmailJS Service ID
+        "template_4821jmv", // Replace with your EmailJS Template ID
+        formRef.current,
+        "rdwNKDnyWwB-Ams6n"   // Replace with your EmailJS Public Key
+      )
+      .then(
+        () => {
+          setStatus("Email sent successfully!");
+          alert(status)
+          formRef.current.reset();
+        },
+        (error) => {
+          setStatus("Failed to send email: " + error.text);
+          alert(status)
+        }
+      );
+  };
   return (
     <div className="min-h-screen  w-full flex items-center justify-center p-8">
       <div className="container mx-auto flex flex-col md:flex-row gap-8 ">
@@ -15,7 +42,8 @@ const ContactForm = () => {
 
         {/* Right Column - Contact Form */}
         <div className="md:w-1/2">
-          <form className="bg-white/10 backdrop-blur-lg rounded-xl p-8 shadow-xl space-y-6">
+
+          <form ref={formRef} onSubmit={sendEmail} className="bg-white/10 backdrop-blur-lg rounded-xl p-8 shadow-xl space-y-6">
             <h2 className="text-3xl font-bold text-black text-center">Contact Us</h2>
             
             <div>
@@ -56,7 +84,7 @@ const ContactForm = () => {
 
             <button
               type="submit"
-              className="pointer-events-auto w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+              className="pointer-events-auto w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 cursor-pointer"
             >
               Send Message
             </button>

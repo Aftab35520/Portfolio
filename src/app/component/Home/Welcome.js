@@ -1,4 +1,8 @@
+'use client'
 export default function Welcome() {
+  const scrollToBottom = () => {
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+  };
   return (
     <div className="w-full flex justify-center">
       <div className="w-full max-w-[calc(100%-80px)] flex justify-between h-[calc(100dvh-00px)] items-center MobileResp">
@@ -29,7 +33,7 @@ export default function Welcome() {
                 Download CV
               </a>
             </button>
-            <button className=" p-2 rounded-3xl text-black border-2 pointer-events-auto cursor-pointer">
+            <button className=" p-2 rounded-3xl text-black border-2 pointer-events-auto cursor-pointer" onClick={()=>scrollToBottom()}>
               Contact
             </button>
           </div>
