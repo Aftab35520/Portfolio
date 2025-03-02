@@ -35,8 +35,8 @@ const ContactForm = () => {
           <p className="text-8xl">Let's Talk</p>
           <p className="w-1/2 GlowText"> If you have an ambitious project, we'd love to help. Reach out to us via the contact form or schedule a call.</p>
           <p className="mt-4 text-blue-800 GlowText">Follow Me</p>
-          <p className=" pointer-events-auto cursor-pointer GlowText">Instagram</p>
-          <p className=" pointer-events-auto cursor-pointer GlowText">Linkedin</p>
+          <p className=" pointer-events-auto cursor-pointer GlowText" onClick={()=>window.location.assign("https://github.com/Aftab35520/Portfolio.git")}>Github</p>
+          <p className=" pointer-events-auto cursor-pointer GlowText" onClick={()=>window.location.assign("www.linkedin.com/in/aftab-alam-043775301")}>Linkedin</p>
           <p className=" pointer-events-auto cursor-pointer GlowText">Twitter/X</p>
         </div>
 
