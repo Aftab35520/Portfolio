@@ -63,7 +63,7 @@ const projects = [
     github: 'https://github.com/yourusername/leaf-prediction'
   },
   {
-    title: 'Image Classification with ML',
+    title: 'DeepFake Image Classification with ML',
     description: 'Custom deep learning model for classifying various image datasets',
     tech: ['PyTorch', 'FastAPI', 'Docker', 'Streamlit'],
     features: [
@@ -71,8 +71,8 @@ const projects = [
       'Real-time inference',
       'Dataset augmentation techniques'
     ],
-    link: 'https://image-classifier.com',
-    github: 'https://github.com/yourusername/image-classification'
+    link: 'https://deepfakeclassifier.onrender.com/',
+    github: 'https://github.com/Aftab35520/deepFakeclassifier.git'
   },
   {
     title: 'Spam Email Detection',
@@ -83,8 +83,8 @@ const projects = [
       'Feature extraction with TF-IDF',
       'Web-based prediction service'
     ],
-    link: 'https://spam-detector.com',
-    github: 'https://github.com/yourusername/spam-detection'
+    link: 'https://spamemailclassification.onrender.com/',
+    github: 'https://github.com/Aftab35520/Spamemail.git'
   }
 ]
 
